@@ -1,0 +1,40 @@
+{
+  "name": "gulp-adui-component-shaking",
+  "version": "1.0.0",
+  "description": "gulp plugin for ad-mob component tree shaking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengpq/gulp-adui-component-shaking.git"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "ad-mob",
+    "component",
+    "tree",
+    "shaking"
+  ],
+  "author": "zhengpq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengpq/gulp-adui-component-shaking/issues"
+  },
+  "homepage": "https://github.com/zhengpq/gulp-adui-component-shaking#readme",
+  "dependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "husky": "^7.0.1",
+    "standard-version": "^9.3.1"
+  }
+}
