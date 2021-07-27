@@ -31,6 +31,8 @@ const getComponentRelation = (srcPath) => {
     // 排除公用的文件夹
     if (commonUsed.includes(item)) return
     const filePath = `${srcPath}/${item}/${item}.json`
+    // 如果文件不存在，不读取文件，因为 Mac 上会存在一些隐藏的文件夹
+    if(!fs.existsSync(filePath)) return
     const fileData = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     // 排除没有依赖关系的组件
     if (!fileData.usingComponents || Object.keys(fileData.usingComponents).length === 0) return
@@ -51,7 +53,7 @@ const getComponentRelation = (srcPath) => {
   Object.keys(componentRelationNew).forEach((item) => {
     componentRelationNew[item] = Array.from(new Set(componentRelationNew[item]))
   })
-  console.log('pakizheng component', componentRelationNew)
+  // console.log('pakizheng component', componentRelationNew)
   return componentRelationNew
 }
 
