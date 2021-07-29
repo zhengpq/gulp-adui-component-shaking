@@ -136,7 +136,7 @@ componentsShaking.shaking = () => {
       })
     }
     item.componentsUsed.forEach((newComponent) => {
-      fsExtra.copy(`${item.srcPath}/${newComponent}`, `${item.distPath}/${newComponent}`)
+      fsExtra.copySync(`${item.srcPath}/${newComponent}`, `${item.distPath}/${newComponent}`)
     })
   })
 }
