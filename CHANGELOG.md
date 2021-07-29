@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/zhengpq/gulp-adui-component-shaking/compare/v1.1.3...v1.1.4) (2021-07-29)
+
+
+### Bug Fixes
+
+* bug fix ([8ec523f](https://github.com/zhengpq/gulp-adui-component-shaking/commit/8ec523f05edcfae5cd65b5423b35e4c1a9a76d55))
+
 ### [1.1.3](https://github.com/zhengpq/gulp-adui-component-shaking/compare/v1.1.2...v1.1.3) (2021-07-27)
 
 
